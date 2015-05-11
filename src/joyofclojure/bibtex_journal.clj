@@ -85,18 +85,3 @@
     infuse-database
     (formatting "D:/data/MyCollectionModified.bib"))
 
-
-
-
-"D:/data/MyCollection.bib"
-
-  title #(.getField % (BibTeXEntry/KEY_AUTHOR))
-  tstring (map title entries)]
-(map #(.toUserString %) tstring)
-entries)
-
-
-(read-bibtex "D:/data/MyCollection.bib")
-
-(Key. "author")
-
